@@ -1,0 +1,9 @@
+{
+	"name": "hnk-adf-lcf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "40081648-8de3-4fea-a4f7-4c003127868c",
+		"tenantId": "450a2b68-6e6f-48c1-a6c7-d5ab26a6cdf5"
+	}
+}

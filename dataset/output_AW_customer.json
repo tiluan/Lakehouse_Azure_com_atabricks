@@ -1,0 +1,25 @@
+{
+	"name": "output_AW_customer",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ADLS_HNK",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "AdventureWorksLT/Output"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "customer.parquet",
+				"folderPath": "AdventureWorksLT",
+				"fileSystem": "landing-zone"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
