@@ -9,7 +9,7 @@
 table = 'address'
 
 # Define o nome do banco de dados onde a tabela está localizada
-database_name = 'bronze'
+database_name = 'adventure_works_bronze'
 
 # Define o caminho da pasta onde o arquivo Parquet está localizado. Deve ser pego dentro da pasta do Container
 folder_path = "mnt/stghnklcf/landing-zone/AdventureWorksLT/"
@@ -32,4 +32,4 @@ df.display()
 df.write.format("delta") \
     .mode("overwrite") \
     .option("overwriteSchema", True) \
-    .saveAsTable(f"{database_name}.advWorks_{table}")
+    .saveAsTable(f"{database_name}.{table}")
