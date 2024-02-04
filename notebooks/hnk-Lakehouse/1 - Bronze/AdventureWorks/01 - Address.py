@@ -27,5 +27,9 @@ df.display()
 
 # COMMAND ----------
 
-# Escreve o DataFrame no formato Delta e salvando como uma tabela no Spark
-df.write.format("delta").saveAsTable(f"{database_name}.{table}")
+# Escreve o DataFrame no formato Delta, substituindo a tabela existente, incluindo a opção de sobrescrever o esquema, e salvando como uma tabela no Spark
+
+df.write.format("delta") \
+    .mode("overwrite") \
+    .option("overwriteSchema", True) \
+    .saveAsTable(f"{database_name}.{table}")
