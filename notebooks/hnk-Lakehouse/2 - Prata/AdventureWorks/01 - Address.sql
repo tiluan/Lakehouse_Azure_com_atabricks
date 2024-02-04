@@ -1,4 +1,4 @@
 -- Databricks notebook source
-CREATE OR REPLACE TABLE prata.advworks_address AS
+CREATE OR REPLACE TABLE adventure_works_prata.address AS
 
-SELECT * FROM bronze.advworks_address;
+SELECT * FROM adventure_works_bronze.address;
