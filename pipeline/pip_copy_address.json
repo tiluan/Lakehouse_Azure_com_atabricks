@@ -157,7 +157,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "output_AW_address",
+						"referenceName": "output_AW_Address",
 						"type": "DatasetReference"
 					}
 				]

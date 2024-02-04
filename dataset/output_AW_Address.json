@@ -1,5 +1,5 @@
 {
-	"name": "output_AW_address",
+	"name": "output_AW_Address",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLS_HNK",
@@ -13,7 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "address.parquet",
+				"fileName": "Address.parquet",
 				"folderPath": "AdventureWorksLT",
 				"fileSystem": "landing-zone"
 			},

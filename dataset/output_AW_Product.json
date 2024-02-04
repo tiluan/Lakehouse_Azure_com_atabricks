@@ -1,5 +1,5 @@
 {
-	"name": "output_AW_Customer",
+	"name": "output_AW_Product",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_ADLS_HNK",
@@ -13,7 +13,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Customer.parquet",
+				"fileName": "Product.parquet",
 				"folderPath": "AdventureWorksLT",
 				"fileSystem": "landing-zone"
 			},
