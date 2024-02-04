@@ -1,17 +1,22 @@
 -- Databricks notebook source
-CREATE DATABASE IF NOT EXISTS bronze
-LOCATION '/mnt/stghnklcf/bronze'
+-- MAGIC %md
+-- MAGIC
+-- MAGIC ### Databases Bronze, Prata e Ouro da fonte AdventureWorks
 
 -- COMMAND ----------
 
-CREATE DATABASE IF NOT EXISTS prata
-LOCATION '/mnt/stghnklcf/prata/raw'
+--DROP DATABASE bronze CASCADE
+CREATE DATABASE IF NOT EXISTS adventure_works_bronze
+LOCATION '/mnt/stghnklcf/adventure_works_bronze'
 
 -- COMMAND ----------
 
-CREATE DATABASE IF NOT EXISTS ouro
-LOCATION '/mnt/stghnklcf/ouro/raw'
+-- DROP DATABASE adventure_works_prata CASCADE
+CREATE DATABASE IF NOT EXISTS adventure_works_prata
+LOCATION '/mnt/stghnklcf/prata/adventure_works_prata'
 
 -- COMMAND ----------
 
--- DROP DATABASE bronze CASCADE
+-- DROP DATABASE adventure_works_ouro CASCADE
+CREATE DATABASE IF NOT EXISTS adventure_works_ouro
+LOCATION '/mnt/stghnklcf/ouro/adventure_works_ouro'
