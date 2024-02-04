@@ -9,7 +9,7 @@
 table = 'customer'
 
 # Define o nome do banco de dados onde a tabela está localizada
-database_name = 'bronze'
+database_name = 'adventure_works_bronze'
 
 # Define o caminho da pasta onde o arquivo Parquet está localizado
 folder_path = "mnt/stghnklcf/landing-zone/AdventureWorksLT/"
