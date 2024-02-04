@@ -32,4 +32,4 @@ df.display()
 df.write.format("delta") \
     .mode("overwrite") \
     .option("overwriteSchema", True) \
-    .saveAsTable(f"{database_name}.{table}")
+    .saveAsTable(f"{database_name}.Sales_Order_Detail")
