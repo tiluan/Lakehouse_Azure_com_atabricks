@@ -1,5 +1,5 @@
 {
-	"name": "input_AW_Address",
+	"name": "input_AW_SalesOrderDetail",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_SQL_SERVER_HNK",
@@ -12,33 +12,42 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "AddressID",
+				"name": "SalesOrderID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "AddressLine1",
-				"type": "nvarchar"
+				"name": "SalesOrderDetailID",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "AddressLine2",
-				"type": "nvarchar"
+				"name": "OrderQty",
+				"type": "smallint",
+				"precision": 5
 			},
 			{
-				"name": "City",
-				"type": "nvarchar"
+				"name": "ProductID",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "StateProvince",
-				"type": "nvarchar"
+				"name": "UnitPrice",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
 			},
 			{
-				"name": "CountryRegion",
-				"type": "nvarchar"
+				"name": "UnitPriceDiscount",
+				"type": "money",
+				"precision": 19,
+				"scale": 4
 			},
 			{
-				"name": "PostalCode",
-				"type": "nvarchar"
+				"name": "LineTotal",
+				"type": "decimal",
+				"precision": 38,
+				"scale": 6
 			},
 			{
 				"name": "rowguid",
@@ -53,7 +62,7 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "Address"
+			"table": "SalesOrderDetail"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

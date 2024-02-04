@@ -1,5 +1,5 @@
 {
-	"name": "input_AW_Address",
+	"name": "input_AW_ProductCategory",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_SQL_SERVER_HNK",
@@ -12,32 +12,17 @@
 		"type": "AzureSqlTable",
 		"schema": [
 			{
-				"name": "AddressID",
+				"name": "ProductCategoryID",
 				"type": "int",
 				"precision": 10
 			},
 			{
-				"name": "AddressLine1",
-				"type": "nvarchar"
+				"name": "ParentProductCategoryID",
+				"type": "int",
+				"precision": 10
 			},
 			{
-				"name": "AddressLine2",
-				"type": "nvarchar"
-			},
-			{
-				"name": "City",
-				"type": "nvarchar"
-			},
-			{
-				"name": "StateProvince",
-				"type": "nvarchar"
-			},
-			{
-				"name": "CountryRegion",
-				"type": "nvarchar"
-			},
-			{
-				"name": "PostalCode",
+				"name": "Name",
 				"type": "nvarchar"
 			},
 			{
@@ -53,7 +38,7 @@
 		],
 		"typeProperties": {
 			"schema": "SalesLT",
-			"table": "Address"
+			"table": "ProductCategory"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"

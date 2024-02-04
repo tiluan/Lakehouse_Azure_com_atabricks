@@ -1,5 +1,5 @@
 {
-	"name": "input_AW_customer",
+	"name": "input_AW_Customer",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_SQL_SERVER_HNK",
