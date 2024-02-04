@@ -1,6 +1,6 @@
 -- Databricks notebook source
 CREATE DATABASE IF NOT EXISTS bronze
-LOCATION '/mnt/stghnklcf/bronze/raw'
+LOCATION '/mnt/stghnklcf/bronze'
 
 -- COMMAND ----------
 
@@ -14,4 +14,4 @@ LOCATION '/mnt/stghnklcf/ouro/raw'
 
 -- COMMAND ----------
 
--- DROP DATABASE ouro CASCADE
+-- DROP DATABASE bronze CASCADE
