@@ -6,7 +6,7 @@
 # COMMAND ----------
 
 # Define o nome da tabela que será lida do arquivo Parquet
-table = 'address'
+table = 'Address'
 
 # Define o nome do banco de dados onde a tabela está localizada
 database_name = 'adventure_works_bronze'
