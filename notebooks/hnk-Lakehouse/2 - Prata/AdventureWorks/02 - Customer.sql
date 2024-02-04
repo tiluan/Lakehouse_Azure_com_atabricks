@@ -1,7 +1,7 @@
 -- Databricks notebook source
-CREATE OR REPLACE TABLE prata.advworks_customer AS
+CREATE OR REPLACE TABLE adventure_works_prata.customer AS
 
-SELECT * FROM bronze.advworks_customer;
+SELECT * FROM adventure_works_bronze.customer;
 
 -- COMMAND ----------
 
