@@ -67,7 +67,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/pip_copy_address')]",
+			"name": "[concat(parameters('factoryName'), '/pip_copy_adv_works')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
